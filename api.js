@@ -10,7 +10,11 @@ const cloudinary = require("cloudinary").v2;
 const cors = require('cors');
 
 
-app.use(cors());
+app.use(cors({
+        origin: [`https://shopeing-rituncs-projects.vercel.app`],
+        method: ["GET", "POST", "PUT", "DELETE"],
+        credentials: true
+}));
 app.use(express.json());
 
 
