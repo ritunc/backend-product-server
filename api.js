@@ -148,6 +148,13 @@ app.get("/product", async (req, res) => {
                 console.log("Some Error occure", error)
         }
      
+});
+
+
+
+app.get("/", (req, res) => {
+        console.log('Hello');
+        res.write('Hello Sir');
 })
 
 
